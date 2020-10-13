@@ -1,0 +1,25 @@
+jasypt:
+   encryptor:
+      password: ${jasyptpwd}
+      algorithm: PBEWithMD5AndDES
+
+server:
+   port: 8080
+   servlet:
+      context-path: /bancoCeiba
+
+tiempoHealthCheck:
+   tiempo: 50  
+
+
+spring:
+   datasource:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      type: com.zaxxer.hikari.HikariDataSource
+      jdbcUrl: jdbc:mysql://localhost:3306/bancoBD?autoReconnect=true&useSSL=false
+      username: root
+      password: root
+      hikari:
+         poolName: pool
+
+
