@@ -23,6 +23,8 @@ dependencies {
 	compile project.ext.apachecommons
 	compile project.ext.swagger
 	compile project.ext.actuator
+
+	testCompile project.ext.junit
 	
 	implementation project(':comun:comun-dominio')
 }
